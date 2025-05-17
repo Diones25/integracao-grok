@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "2255d976-2517-4a19-93ea-1edf30364cf8",
+		"name": "DeepSeek",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15952256",
+		"_collection_link": "https://diones32.postman.co/workspace/Workspace-Diones~6db78dad-ecc5-419b-926f-36f6909bb4c5/collection/15952256-2255d976-2517-4a19-93ea-1edf30364cf8?action=share&source=collection_link&creator=15952256"
+	},
+	"item": [
+		{
+			"name": "New Prompt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\": \"Qual a capital da Alemanha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/chat/send",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"chat",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
